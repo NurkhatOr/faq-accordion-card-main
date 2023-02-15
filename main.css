@@ -147,11 +147,10 @@ a {
   font-weight: 700;
 }
 
-/* sds */
+/* Accordion */
 .faq {
   background-color: #fff;
   margin-top: 9.2rem;
-
   border-radius: 1.5rem;
   position: relative;
 }
@@ -205,13 +204,17 @@ button {
 
 /* Animation */
 
-.arrow-uprotation {
+button[aria-expanded="true"] {
+  font-weight: 700;
+}
+
+button[aria-expanded="true"] .arrow {
   transition: transform 0.25s ease-in;
   cursor: pointer;
   transform: rotate(-180deg);
 }
 
-.arrow-downrotation {
+button[aria-expanded="false"] .arrow {
   transition: transform 0.25s ease-in;
   cursor: pointer;
   transform: rotate(0deg);
